@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC - History</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The History of Frankly Shabby Cucumbers</h1>
+        </header>
+        <main>
+            <ul class="history-list">
+                <li>
+                    <div class="history-item">
+                        <span class="year">2025</span> - Launch of this website
+                    </div>
+                    <div class="details">
+                        The all-in-one portal of the Frankly Shabby Information was put on this website.
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        <span class="year">2024</span> - Top Hit
+                    </div>
+                    <div class="details">
+                        Frankly Shabby Cucumbers were considered the <b>"Best Vegetable"</b> - Mr Gordon
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        <span class="year">2023</span> - New Records
+                    </div>
+                    <div class="details">
+                        The new records of the Frankly Shabby Cucumbers was being recognised by other countries to the point that it had become engrained in some societies.
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        <span class="year">2022</span> - The Rise of Fame
+                    </div>
+                    <div class="details">
+                        The popularity of the Frankly Shabby Cucumbers grew to astonishing records, as seen here<a href="https://frankly-shabby-cucumberz.deno.dev/">https://frankly-shabby-cucumberz.deno.dev/</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        <span class="year">2021</span> - The Launch of Frankly Shabby Cucumbers
+                    </div>
+                    <div class="details">
+                        The Frankly Shabby Cucumbers were officially recognised as cucumbers.
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.history-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const details = item.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

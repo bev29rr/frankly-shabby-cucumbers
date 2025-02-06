@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC - Home</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Real Homepage</h1>
+        </header>
+        <main>
+            <ul class="history-list">
+                <li>
+                    <div class="history-item">
+                        Site Map
+                    </div>
+                    <div class="details">
+                        - <a href="/">Fake mainpage</a><br>
+                        - <a href="/mainpage.html">Real mainpage</a><br>
+                        - <a href="/history.html">History</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        Links
+                    </div>
+                    <div class="details">
+                        The sponsors are coming...
+                    </div>
+                </li>
+                <li>
+                    <div class="history-item">
+                        Creators
+                    </div>
+                    <div class="details">
+                        Main Dev - <a href="https://github.com/bev29rr">Bev29rr</a><br>
+                        Master Oogway - <a href="https://github.com/jakeg">Jake Gordon</a>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.history-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const details = item.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
