@@ -1,0 +1,29 @@
+@keyframes glitch {
+    0% { text-shadow: 2px 0 red, -2px 0 blue; }
+    25% { text-shadow: -2px 0 red, 2px 0 blue; }
+    50% { text-shadow: 2px 2px red, -2px -2px blue; }
+    75% { text-shadow: -2px -2px red, 2px 2px blue; }
+    100% { text-shadow: 2px 0 red, -2px 0 blue; }
+}
+
+.glitch {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    animation: glitch 0.1s infinite alternate; /* loops */
+}
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+g {
+    color: green;
+}
