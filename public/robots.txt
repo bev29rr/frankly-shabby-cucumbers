@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://franklyshabycucumbers.deno.dev/sitemap.xml
