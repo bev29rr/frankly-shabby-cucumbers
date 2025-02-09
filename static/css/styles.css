@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 @keyframes glitch {
     0% { text-shadow: 2px 0 red, -2px 0 blue; }
     25% { text-shadow: -2px 0 red, 2px 0 blue; }
@@ -11,6 +16,7 @@
     font-weight: bold;
     color: white;
     position: relative;
+    z-index: 1;
     text-transform: uppercase;
     word-wrap: break-word;
     animation: glitch 0.1s infinite alternate; /* loops */
@@ -26,4 +32,19 @@ body {
 
 g {
     color: green;
+}
+
+.bottom-anchor {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+    line-height: 50%;
+}
+
+.bottom-anchor h1 {
+    text-align: center;
+    background-color: rgba(194, 0, 0, 0.5);
+    line-height: 80%;
 }
